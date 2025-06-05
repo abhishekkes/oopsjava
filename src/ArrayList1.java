@@ -57,21 +57,8 @@ public class ArrayList1 {
             System.out.println(iterator.next());
         }
 
-        System.out.println("\nIterating using ListIterator (backwards):");
-        ListIterator<String> listIterator = fruits.listIterator(fruits.size());
-        while (listIterator.hasPrevious()) {
-            System.out.println(listIterator.previous());
-        }
 
-        // 10. Converting to array
-        String[] fruitsArray = new String[fruits.size()];
-        fruitsArray = fruits.toArray(fruitsArray);
-        System.out.println("\nArray from ArrayList:");
-        for (String fruit : fruitsArray) {
-            System.out.println(fruit);
-        }
-
-        // 11. Clearing the ArrayList
+        // 10. Clearing the ArrayList
         fruits.clear();
         System.out.println("\nAfter clearing: " + fruits);
         System.out.println("Is ArrayList empty now? " + fruits.isEmpty());
