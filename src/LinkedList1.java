@@ -39,11 +39,6 @@ public class LinkedList1 {
             System.out.println(fruit);
         }
 
-        System.out.println("\nIterating using ListIterator (backwards):");
-        ListIterator<String> iterator = fruits.listIterator(fruits.size());
-        while (iterator.hasPrevious()) {
-            System.out.println(iterator.previous());
-        }
 
         // Clearing the LinkedList
         fruits.clear();
